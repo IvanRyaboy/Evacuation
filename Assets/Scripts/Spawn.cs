@@ -5,11 +5,15 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     public GameObject pers;
+    AudioSource audioSource;
+    public int RandomSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
-        int RandomSpawn = Random.Range(0,2);
+        audioSource = GetComponent<AudioSource>();
+        RandomSpawn = Random.Range(0,3);
+        audioSource.Play();
         Debug.Log(RandomSpawn);
         switch (RandomSpawn)
         {
