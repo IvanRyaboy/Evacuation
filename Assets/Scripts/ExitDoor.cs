@@ -63,7 +63,7 @@ public class ExitDoor : MonoBehaviour
                     }
                     else
                     {
-                        ResultTxt = "Вы выбрали неправильную дверь";
+                        ResultTxt = "Вы выбрали неправильную дверь.\n Обратите внимание на план эвакуации";
                     } break;
             case 2 : if ((numDoor == 0) || (numDoor == 1))
                     {
@@ -71,7 +71,7 @@ public class ExitDoor : MonoBehaviour
                     }
                     else
                     {
-                        ResultTxt = "Вы выбрали неправильную дверь";
+                        ResultTxt = "Вы выбрали неправильную дверь.\n Обратите внимание на план эвакуации";
                     } break;
             case 1 : if ((numDoor == 2))
                     {
@@ -79,7 +79,7 @@ public class ExitDoor : MonoBehaviour
                     }
                     else
                     {
-                        ResultTxt = "Вы выбрали неправильную дверь";
+                        ResultTxt = "Вы выбрали неправильную дверь.\n Обратите внимание на план эвакуации";
                     } break;
         }
         Result.text = ResultTxt;
